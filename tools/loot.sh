@@ -1,6 +1,6 @@
 #!/bin/bash
 
-docker run \
+podman run \
   -v $(pwd)/loot:/tmp/loot \
   --rm -it chip-kernel \
   bash -c 'cp $KERNEL_DIR/arch/arm/boot/zImage /tmp/loot/vmlinuz-$NEW_KERNEL && \
